@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza constructor</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.pay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="notificationContainer" id="notificationContainer">
+        <h3>Дякуємо, платіж відправлено на опрацювання !</h3>
+        <button id="closeBtn">Закрити</button>
+    </div>
+
+    <div class="wrap" id="wrap">
+        <div class="item1">
+            <h2>
+                PIZZA
+            </h2>
+            <p class="pizza_store">
+                Pizza store<br>http//pizza.ua
+            </p>
+            <button class="apple_btn">
+                <i class="fa-brands fa-apple" style="color: #ffffff;"></i>
+                Pay
+            </button>
+            <p class="inner_pay">
+                Або скористайтесь іншим методом оплати
+            </p>
+            <button class="card_btn">
+                <i class="fa-regular fa-credit-card fa-xl"></i>
+                Платіжна картка
+            </button>
+        </div>
+
+        <div class="vl"></div>
+        <div class="item2">
+            <div class="card_item">
+                <p class="card_icon"><i class="fa-brands fa-cc-visa fa-2xl" style="color: #ffffff;"></i></p> 
+                <p class="card_num">Card number</p>
+                <label class="card_num">
+                    <input type="text" name="cardno" id="cardno" maxlength="16" onkeypress="cardspace"/>
+                </label>
+                <div class="card_bot">
+                    <div class="date_left">
+                        <p>
+                            mm/yy
+                        </p>
+                        <p>
+                            <label for="cvv">
+                                <input type="text" name="cvv" id="cvv" maxlength="5"/>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="date_right">
+                        <p>
+                            cvv/cvv2
+                        </p>
+                        <p>
+                            <label for="cvv">
+                                <input type="text" name="cvv" id="cvv" maxlength="3"/>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <form class="form">
+                <div class="form_group">
+                    <input class="form_input" placeholder="Email" id="email">
+                </div>
+            </form>
+            <button class="send_btn" id="send">
+                Send
+            </button>
+        </div>
+    </div>
+    <script src="main.pay.js"></script>
+</body>
+
+
+</html>
